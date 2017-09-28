@@ -1,0 +1,20 @@
+python prob1)
+
+function identifyCheapest:
+	1)gets passed a set of part names (strings)
+	2)parses through 4 comapnny part files in source folder
+	3)find and returns a dict with the part name as key and cheapest value as a tuple(price, company name)
+
+function getComponentsToadd():
+	1)acepts no arguements
+	2)parses through 4 company part files in source folder
+	3)creates and returns dict where {companyname1: {set of all parts this company does not carry}, companyname2: {set of all ...etc...}
+
+function getSummary():
+	1)parse signal file
+	2)return dict with {signalname: (min val of signal, avg val, max val)} for all signals in the file
+
+function saveContinuousData(start, end, targetFileName):
+	1) write a file that captures only the data in between the start and end time
+
+

@@ -1,0 +1,33 @@
+#! /bin/bash
+#
+#$Author$
+#$Date$
+#$Revision$
+#$HeadURL$
+#$Id$
+
+if [[ $# == 0 ]]
+then
+    echo "usage: sensor_sum.sh"
+    exit 1
+elif [[ $# > 1 ]]
+then
+    echo "please provide only one filename"
+    exit 1
+elif [[ ! -r $1 ]]
+then
+    echo "$1 is not a readable file!"
+    exit 1
+fi
+
+exec 4<$1
+while read line<&4
+do
+    SensorID=$(echo $line | cut -d \- -f 1)
+    N0=$(echo $line | cut -d ' ' -f 2)
+    N1=$(echo $line | cut -d ' ' -f 3)
+    N2=$(echo $line | cut -d ' ' -f 4)
+    ((SUM=$N0+$N1+$N2))
+    echo "$SensorID $SUM"
+done
+exit 0

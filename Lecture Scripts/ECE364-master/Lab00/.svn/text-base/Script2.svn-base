@@ -1,0 +1,14 @@
+#! /bin/bash
+#
+#$Author$
+#$Date$
+#$Revision$
+#$HeadURL$
+#$Id$
+
+Num=$1
+for(( i=Num; i>=0; i--))
+do
+    echo ${i};
+done
+exit 0

@@ -1,0 +1,201 @@
+Lab11/PhaseI/ee364f07
+
+52
+[15  3 61 56 27 22 48 32 29 38 21 50 28 54 37 47 27 35 52 34 12 18 56 48  8
+ 34  1 37 27 38 13 47 25  6 37 46 25 51 52 34 21 21 17  6 11 19 32 34 15 51
+ 56 -1]
+52
+[15  3 61 56 27 22 48 32 29 38 21 50 28 54 37 47 27 35 52 34 12 18 56 48  8
+ 34  1 37 27 38 13 47 25  6 37 46 25 51 52 34 21 21 17  6 11 19 32 34 15 51
+ 56 -1]
+cleaning
+cleaning
+image provided
+52
+[15  3 61 56 27 22 48 32 29 38 21 50 28 54 37 47 27 35 52 34 12 18 56 48  8
+ 34  1 37 27 38 13 47 25  6 37 46 25 51 52 34 21 21 17  6 11 19 32 34 15 51
+ 56 -1]
+Embedding
+9113659
+image provided
+52
+[15  3 61 56 27 22 48 32 29 38 21 50 28 54 37 47 27 35 52 34 12 18 56 48  8
+ 34  1 37 27 38 13 47 25  6 37 46 25 51 52 34 21 21 17  6 11 19 32 34 15 51
+ 56 -1]
+Embedding
+9154428
+image provided
+52
+[15  3 61 56 27 22 48 32 29 38 21 50 28 54 37 47 27 35 52 34 12 18 56 48  8
+ 34  1 37 27 38 13 47 25  6 37 46 25 51 52 34 21 21 17  6 11 19 32 34 15 51
+ 56 -1]
+Embedding
+3087222
+image provided
+52
+[15  3 61 56 27 22 48 32 29 38 21 50 28 54 37 47 27 35 52 34 12 18 56 48  8
+ 34  1 37 27 38 13 47 25  6 37 46 25 51 52 34 21 21 17  6 11 19 32 34 15 51
+ 56 -1]
+image provided
+Extracting
+Content Provided
+Num bytes: 36864000
+Padding: 0
+Extracting
+Content Provided
+Num bytes: 36864000
+Padding: 0
+Extracting
+Content Provided
+Num bytes: 36864000
+Padding: 0
+cleaning
+image provided
+52
+[15  3 61 56 27 22 48 32 29 38 21 50 28 54 37 47 27 35 52 34 12 18 56 48  8
+ 34  1 37 27 38 13 47 25  6 37 46 25 51 52 34 21 21 17  6 11 19 32 34 15 51
+ 56 -1]
+Embedding
+3087222
+Extracting
+Content Provided
+Num bytes: 36864000
+Padding: 0
+Extracting
+Content Provided
+Num bytes: 33177600
+Padding: 0
+Content Provided
+Num bytes: 36454636
+Padding: 1
+Content Provided
+Num bytes: 36617712
+Padding: 0
+Content Provided
+Num bytes: 12348888
+Padding: 2
+image provided
+image provided
+image provided
+------------------------------------------------------------------------------------------------------
+FUNCTION                         | DESCRIPTION                  | COMMENTS                 | POINTS  
+------------------------------------------------------------------------------------------------------
+CarrierCheckingForPayload          No Payload                     Passed                     1/1     
+CarrierCheckingForPayload          Payload Present                Passed                     1/1     
+CarrierCleaning                    Cleaning Once                  Passed                     1/1     
+CarrierCleaning                    Cleaning Twice                 Passed                     1/1     
+CarrierCleaning                    Random Clean                   Passed                     1/1     
+CarrierEmbedding                   Compression 6                  Passed                     7/7     
+CarrierEmbedding                   Compression 9                  Passed                     7/7     
+CarrierEmbedding                   No Compression                 Passed                     7/7     
+CarrierEmbeddingValidation         Incorrect Parameter            Passed                     1/1     
+CarrierEmbeddingValidation         Large Payload                  Passed                     1/1     
+CarrierEmbeddingValidation         Payload Exists                 Passed                     1/1     
+CarrierExtraction                  Compression 6                  Passed                     7/7     
+CarrierExtraction                  Compression 9                  Passed                     7/7     
+CarrierExtraction                  No Compression                 Passed                     7/7     
+CarrierImmutability                After Cleaning                 Passed                     1/1     
+CarrierImmutability                After Embedding                Passed                     1/1     
+CarrierImmutability                After Extraction               Passed                     1/1     
+CarrierInitializerAndValidation    Initializer Check              Passed                     1/1     
+CarrierInitializerAndValidation    Invalid Extraction             Passed                     1/1     
+PayloadBadInitializer              Bad Compression Level          Passed                     1/1     
+PayloadBadInitializer              Bad Content                    Passed                     1/1     
+PayloadBadInitializer              Bad Image                      Passed                     1/1     
+PayloadBadInitializer              Missing Parameters             Passed                     1/1     
+PayloadWithContentInput            Color Image 1, Level 6         Passed                     7/7     
+PayloadWithContentInput            Color Image 1, Level 9         Passed                     7/7     
+PayloadWithContentInput            Color Image 2, Uncompressed    Passed                     7/7     
+PayloadWithImageInput              Color Image 1, Level 6         Passed                     7/7     
+PayloadWithImageInput              Color Image 1, Level 9         Passed                     7/7     
+PayloadWithImageInput              Color Image 2, Uncompressed    Passed                     7/7     
+------------------------------------------------------------------------------------------------------
+
+Total Score = 101.0
+
+
+Lab11/PhaseI/ee364f07
+
+image provided
+52
+[15  3 61 56 27 22 48 32 29 38 21 50 28 54 37 47 27 35 52 34 12 18 56 48  8
+ 34  1 37 27 38 13 47 25  6 37 46 25 51 52 34 21 21 17  6 11 19 32 34 15 51
+ 56 -1]
+Embedding
+2035998
+image provided
+52
+[15  3 61 56 27 22 48 32 29 38 21 50 28 54 37 47 27 35 52 34 12 18 56 48  8
+ 34  1 37 27 38 13 47 25  6 37 46 25 51 52 34 21 21 17  6 11 19 32 34 15 51
+ 56 -1]
+Embedding
+2035998
+image provided
+52
+[15  3 61 56 27 22 48 32 29 38 21 50 28 54 37 47 27 35 52 34 12 18 56 48  8
+ 34  1 37 27 38 13 47 25  6 37 46 25 51 52 34 21 21 17  6 11 19 32 34 15 51
+ 56 -1]
+Embedding
+2035998
+image provided
+52
+[15  3 61 56 27 22 48 32 29 38 21 50 28 54 37 47 27 35 52 34 12 18 56 48  8
+ 34  1 37 27 38 13 47 25  6 37 46 25 51 52 34 21 21 17  6 11 19 32 34 15 51
+ 56 -1]
+Embedding
+2035998
+image provided
+52
+[15  3 61 56 27 22 48 32 29 38 21 50 28 54 37 47 27 35 52 34 12 18 56 48  8
+ 34  1 37 27 38 13 47 25  6 37 46 25 51 52 34 21 21 17  6 11 19 32 34 15 51
+ 56 -1]
+Embedding
+2035998
+Execution Times = ['18.740', '18.540', '18.500', '18.480', '18.370']
+Average Execution Time = 18.526 sec
+Extracting
+Content Provided
+Num bytes: 33177600
+Padding: 0
+Extracting
+Content Provided
+Num bytes: 33177600
+Padding: 0
+Extracting
+Content Provided
+Num bytes: 33177600
+Padding: 0
+Extracting
+Content Provided
+Num bytes: 33177600
+Padding: 0
+Extracting
+Content Provided
+Num bytes: 33177600
+Padding: 0
+Execution Times = ['99.240', '99.070', '98.810', '98.740', '98.810']
+Average Execution Time = 98.934 sec
+image provided
+image provided
+52
+[15  3 61 56 27 22 48 32 29 38 21 50 28 54 37 47 27 35 52 34 12 18 56 48  8
+ 34  1 37 27 38 13 47 25  6 37 46 25 51 52 34 21 21 17  6 11 19 32 34 15 51
+ 56 -1]
+Extracting
+Extracting
+image provided
+-------------------------------------------------------------------------------
+FUNCTION               | DESCRIPTION     | COMMENTS                 | POINTS  
+-------------------------------------------------------------------------------
+EmbeddingPerformance                       FAILED                     0/5     
+ExtractionPerformance                      FAILED                     0/5     
+GrayCarrierEmbedding     Color in Gray     Error running function     0/2.5   
+GrayCarrierEmbedding     Gray in Gray      Error running function     0/2.5   
+GrayCarrierExtraction    Color in Gray     Error running function     0/2.5   
+GrayCarrierExtraction    Gray in Gray      Error running function     0/2.5   
+VariableEmbedding                          Error running function     0/5     
+VariableExtraction       Known Sample      Error running function     0/2.5   
+VariableExtraction       Unknown Sample    Error running function     0/2.5   
+-------------------------------------------------------------------------------
+
+Total Score = 0.0

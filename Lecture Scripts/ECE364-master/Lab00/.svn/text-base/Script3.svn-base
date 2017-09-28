@@ -1,0 +1,17 @@
+#! /bin/bash
+#
+#$Author$
+#$Date$
+#$Revision$
+#$HeadURL$
+#$Id$
+
+Num=$1
+for(( i=Num; i>=0; i--))
+do
+    if (( $i % 3 == 0 ))
+    then
+        echo ${i};
+    fi
+done
+exit 0

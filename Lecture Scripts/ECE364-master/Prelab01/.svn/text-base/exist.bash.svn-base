@@ -1,0 +1,19 @@
+#! /bin/bash
+#
+#$Author$
+#$Date$
+#$Revision$
+#$HeadURL$
+#$Id$
+
+for arg in $@
+do
+    if [[ -r $arg ]]
+    then
+	echo "File $arg is readable"
+    elif [[ ! -r $arg && ! -e $arg ]]
+    then
+	touch $arg
+    fi
+done
+exit 0

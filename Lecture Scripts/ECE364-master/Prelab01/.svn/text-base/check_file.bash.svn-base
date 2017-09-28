@@ -1,0 +1,63 @@
+#! /bin/bash
+#
+#$Author$
+#$Date$
+#$Revision$
+#$HeadURL$
+#$Id$
+
+#Input checking
+if [[ $# == 0 ]]
+then
+    echo "Usage: ./check_file.bash <filename>"
+    exit 1
+elif [[ $# > 1 ]]
+then
+    echo "Number of input file must be limited to one"
+    exit 1
+fi
+
+#If pass, go to main
+FILENAME=$1
+if [[ -e $FILENAME ]]
+then
+    echo "$FILENAME exists"
+else
+    echo "$FILENAME does not exist"
+fi
+
+if [[ -d $FILENAME ]]
+then
+    echo "$FILENAME is a directory"
+else
+    echo "$FILENAME is not a directory"
+fi
+
+if [[ -f $FILENAME ]]
+then
+    echo "$FILENAME is an ordinary file"
+else
+    echo "$FILENAME is not an ordinary file"
+fi
+
+if [[ -r $FILENAME ]]
+then
+    echo "$FILENAME is readable"
+else
+    echo "$FILENAME is not readable"
+fi
+
+if [[ -w $FILENAME ]]
+then
+    echo "$FILENAME is writable"
+else
+    echo "$FILENAME is not writable"
+fi
+
+if [[ -x $FILENAME ]]
+then
+    echo "$FILENAME is executable"
+else
+    echo "$FILENAME is not executable"
+fi
+exit 0

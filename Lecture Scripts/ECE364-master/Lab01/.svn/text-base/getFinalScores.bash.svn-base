@@ -1,0 +1,45 @@
+#! /bin/bash
+#
+#$Author$
+#$Date$
+#$Revision$
+#$HeadURL$
+#$Id$
+
+if [[ $# != 1 ]]
+then
+    echo "Usage: ./getFinalScores.bash <filename>"
+    exit 1
+fi
+
+FILE=$@
+if [[ ! -e $FILE ]]
+then
+    echo "Error reading input file: $FILE"
+    exit 2
+fi
+
+OUTPUT=$(echo $FILE | cut -d "." -f 1)
+FOUT="$OUTPUT.out"
+if [[ -e $FOUT ]]
+then
+    echo "Output file $FOUT already exists"
+    exit 3
+fi
+
+touch $FOUT
+
+exec 4<$FILE
+exec 5>$FOUT
+
+while read line<&4
+do
+    name=$(echo $line | cut -d "," -f 1)
+    assignment=$(echo $line | cut -d "," -f 2)
+    midterm1=$(echo $line | cut -d "," -f 3)
+    midterm2=$(echo $line | cut -d "," -f 4)
+    project=$(echo $line | cut -d "," -f 5)
+    let final=$assignment*15/100+$midterm1*30/100+$midterm2*30/100+$project*25/100
+    echo "$name,$final" >&5
+done
+exit 0

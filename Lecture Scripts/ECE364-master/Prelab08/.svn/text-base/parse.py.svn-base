@@ -1,0 +1,46 @@
+#! /usr/bin/env python3.4
+#
+#$Author$
+#$Date$
+#$Revision$
+#$HeadURL$
+#$Id$
+from sys import *
+
+def parse_it(file):
+    for l in file:
+        line = l.split()
+        sum = 0
+        string = ""
+        count = len(line)
+        for num in line:
+            try:
+                sum += int(num)
+            except (ValueError):
+                string += num + " "
+                count -= 1
+            finally:
+                pass
+        try:
+            avg = "%.3f " % (float(sum) / count)
+        except (ZeroDivisionError):
+            print(string)
+        else:
+            print(avg + string)
+        finally:
+            pass
+
+
+if __name__ == "__main__":
+    try:
+        file = open(argv[1])
+    except (IndexError):
+        print("Usage: parse.py [filename]")
+    except (IOError):
+        err = argv[1] + " is not a readable file."
+        print(err)
+    else:
+        parse_it(file)
+    finally:
+        pass
+

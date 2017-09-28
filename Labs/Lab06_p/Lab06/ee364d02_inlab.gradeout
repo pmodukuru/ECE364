@@ -1,0 +1,18 @@
+Lab06/ee364d02
+
+
+------------------------------------------------------------------------------------------
+FUNCTION                  | DESCRIPTION               | COMMENTS                  | POINTS    
+------------------------------------------------------------------------------------------
+getCompleteEntries                                      FAILED                      0/10      
+getEmployeesWithIDs                                     FAILED                      0/10      
+getEmployeesWithPhones                                  Passed                      10/10     
+getEmployeesWithStates                                  FAILED                      0/10      
+getEmployeesWithoutIDs                                  FAILED                      0/10      
+getEmployeesWithoutPhones                               FAILED                      0/10      
+getEmployeesWithoutStates                               FAILED                      0/10      
+getRejectedEntries                                      Passed                      10/10     
+splitNotUsed                                            Passed                      0/0       
+------------------------------------------------------------------------------------------
+
+Total Score = 20

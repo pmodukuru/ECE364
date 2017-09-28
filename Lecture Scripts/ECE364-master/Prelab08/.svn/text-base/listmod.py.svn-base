@@ -1,0 +1,20 @@
+#! /usr/bin/env python3.4
+#
+#$Author$
+#$Date$
+#$Revision$
+#$HeadURL$
+#$Id$
+
+from list import find_median
+
+if __name__ == "__main__":
+    list1_mapped = map(int, input("Enter the first list of numbers: ").split())
+    list2_mapped = map(int, input("Enter the second list of numbers: ").split())
+    list1 = list(list1_mapped)
+    list2 = list(list2_mapped)
+    print("First List:", list1)
+    print("Second List:", list2)
+    (Median, Sorted_List) = find_median(list1, list2)
+    print("Merged List:", Sorted_List)
+    print("Median:", Median)
